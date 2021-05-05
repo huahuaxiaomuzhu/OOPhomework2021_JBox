@@ -76,6 +76,9 @@ public class MD5Listener {
             md5Form.getSHA512TextArea().setText(md5Form.getSHA512TextArea().getText().toUpperCase(Locale.ROOT));
             md5Form.getNativeTextArea().grabFocus();
         });
+        md5Form.getNativeClearButton().addActionListener(e -> {
+            md5Form.getNativeTextArea().setText("");
+        });
     }
 
     /**
