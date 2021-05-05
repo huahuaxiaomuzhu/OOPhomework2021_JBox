@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.huahuaxiaomuzhu.ui.form.func.Base64Form">
+  <grid id="27dc6" binding="Base64Panel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="760" height="276"/>
+    </constraints>
+    <properties/>
+    <border type="line"/>
+    <children>
+      <grid id="d7c97" binding="ButtonArea" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b1e2a" class="javax.swing.JButton" binding="nativeToBase64Button">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="➡Base64加密"/>
+            </properties>
+          </component>
+          <component id="1f4ee" class="javax.swing.JButton" binding="base64ToNativeButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="⬅Base64解密"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="353c" binding="nativeScroll">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="123a0" class="javax.swing.JTextArea" binding="nativeTextArea">
+            <constraints/>
+            <properties>
+              <lineWrap value="true"/>
+              <toolTipText value="输入需要加密的文字"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="b7a01" class="javax.swing.JButton" binding="nativeClearButton">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="清空"/>
+        </properties>
+      </component>
+      <component id="619df" class="javax.swing.JButton" binding="nativeCopyButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="复制"/>
+        </properties>
+      </component>
+      <component id="fdf04" class="javax.swing.JButton" binding="base64ClearButton">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="清空"/>
+        </properties>
+      </component>
+      <component id="316ca" class="javax.swing.JButton" binding="base64CopyButton">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="复制"/>
+        </properties>
+      </component>
+      <scrollpane id="7e16f" binding="base64Scroll">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <horizontalScrollBarPolicy value="30"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="fc008" class="javax.swing.JTextArea" binding="base64TextArea">
+            <constraints/>
+            <properties>
+              <dragEnabled value="true"/>
+              <lineWrap value="true"/>
+              <toolTipText value="输入需要解密的base64字符串"/>
+              <wrapStyleWord value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
