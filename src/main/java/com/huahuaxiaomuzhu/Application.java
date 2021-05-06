@@ -2,6 +2,7 @@ package com.huahuaxiaomuzhu;
 
 import com.huahuaxiaomuzhu.ui.MainFrame;
 import com.huahuaxiaomuzhu.ui.form.MainWindow;
+import com.huahuaxiaomuzhu.util.ClipBoardListener;
 
 import javax.swing.*;
 
@@ -17,5 +18,6 @@ public class Application {
         mainWindow.init();
         mainFrame.setContentPane(mainWindow.getTabbedPane1());
         mainFrame.setVisible(true);
+        ClipBoardListener.getInstance().begin();
     }
 }

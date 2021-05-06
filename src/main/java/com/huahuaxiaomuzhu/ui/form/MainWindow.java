@@ -3,8 +3,11 @@ package com.huahuaxiaomuzhu.ui.form;
 import com.huahuaxiaomuzhu.ui.form.func.*;
 import com.intellij.uiDesigner.core.GridConstraints;
 
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class MainWindow {
     private JTabbedPane tabbedPane1;
@@ -16,6 +19,7 @@ public class MainWindow {
     private JPanel JsonPanel;
     private JPanel TimePanel;
     private JPanel ColorPanel;
+    private JPanel ClipBoardPanel;
 
     public JPanel getMd5Panel() {
         return md5Panel;
@@ -53,6 +57,10 @@ public class MainWindow {
         return ColorPanel;
     }
 
+    public JPanel getClipBoardPanel() {
+        return ClipBoardPanel;
+    }
+
     private static MainWindow mainWindow;
     private MainWindow(){
     }
@@ -74,6 +82,8 @@ public class MainWindow {
         mainWindow.getJsonPanel().add(JsonForm.getInstance().getJsonPanel());
         mainWindow.getTimePanel().add(DateFormatForm.getInstance().getDatePanel());
         mainWindow.getColorPanel().add(ColorForm.getInstance().getColorPanel());
+        mainWindow.getClipBoardPanel().add(ClipBoardForm.getInstance().getClipBoardPanel());
+
     }
 
 }
