@@ -27,5 +27,14 @@ public class MainFrame extends JFrame {
         JsonListener.addListeners();
         DateListener.addListeners();
         ColorListener.addListeners();
+        QRCodeListener.addListeners();
+    }
+    private static MainFrame mainFrame;
+    private MainFrame(){}
+    public static MainFrame getInstance(){
+        if (mainFrame==null){
+            mainFrame=new MainFrame();
+        }
+        return mainFrame;
     }
 }

@@ -11,7 +11,7 @@ public class Application {
     public static MainFrame mainFrame;
     private static MainWindow mainWindow = MainWindow.getInstance();
     public static void main(String[] args){
-        mainFrame=new MainFrame();
+        mainFrame=MainFrame.getInstance();
         mainFrame.init();
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.addListeners();

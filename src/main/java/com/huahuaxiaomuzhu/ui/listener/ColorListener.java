@@ -3,8 +3,6 @@ package com.huahuaxiaomuzhu.ui.listener;
 import com.huahuaxiaomuzhu.ui.form.func.ColorForm;
 import com.huahuaxiaomuzhu.util.ColorUtil;
 
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -41,9 +39,6 @@ public class ColorListener {
             colorForm.getGSlider().setValue(result[1]);
             colorForm.getBSlider().setValue(result[2]);
             updateAll();
-        });
-        colorForm.getRGBToHEXButton().addActionListener(e -> {
-            colorForm.getHEXText().setText(ColorUtil.RGBToHex(Integer.parseInt(colorForm.getRText().getText()),Integer.parseInt(colorForm.getGText().getText()),Integer.parseInt(colorForm.getBText().getText())));
         });
         colorForm.getRText().addKeyListener(new KeyAdapter() {
             @Override
