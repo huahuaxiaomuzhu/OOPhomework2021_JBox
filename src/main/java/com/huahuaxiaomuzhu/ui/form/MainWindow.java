@@ -3,11 +3,8 @@ package com.huahuaxiaomuzhu.ui.form;
 import com.huahuaxiaomuzhu.ui.form.func.*;
 import com.intellij.uiDesigner.core.GridConstraints;
 
-import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.io.InputStream;
 
 public class MainWindow {
     private JTabbedPane tabbedPane1;
@@ -21,6 +18,7 @@ public class MainWindow {
     private JPanel ColorPanel;
     private JPanel ClipBoardPanel;
     private JPanel QRCodePanel;
+    private JPanel encodePanel;
 
     public JPanel getMd5Panel() {
         return md5Panel;
@@ -66,6 +64,10 @@ public class MainWindow {
         return QRCodePanel;
     }
 
+    public JPanel getEncodePanel() {
+        return encodePanel;
+    }
+
     private static MainWindow mainWindow;
     private MainWindow(){
     }
@@ -75,8 +77,6 @@ public class MainWindow {
         }
         return mainWindow;
     }
-    private static GridConstraints gridConstraints = new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(200, 200), null, 0, false);
-
     public void init(){
         mainWindow=getInstance();
         mainWindow.getBase64Panel().add(Base64Form.getInstance().getBase64Panel());
@@ -89,6 +89,7 @@ public class MainWindow {
         mainWindow.getColorPanel().add(ColorForm.getInstance().getColorPanel());
         mainWindow.getClipBoardPanel().add(ClipBoardForm.getInstance().getClipBoardPanel());
         mainWindow.getQRCodePanel().add(QRForm.getInstance().getQRPanel());
+        mainWindow.getEncodePanel().add(EncodeForm.getInstance().getEncodePanel());
     }
 
 }

@@ -47,6 +47,14 @@
             <border type="none"/>
             <children/>
           </grid>
+          <grid id="a13ef" binding="encodePanel" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="encode"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
           <grid id="3037d" binding="hexadecimalConversionPanel" layout-manager="CardLayout" hgap="0" vgap="0">
             <constraints>
               <tabbedpane title="Hex"/>
