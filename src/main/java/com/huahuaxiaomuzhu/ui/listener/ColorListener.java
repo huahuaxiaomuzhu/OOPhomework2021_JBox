@@ -5,10 +5,13 @@ import com.huahuaxiaomuzhu.util.ColorUtil;
 
 import java.awt.*;
 import java.awt.event.*;
-
+/**
+ * 给调色板页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class ColorListener {
     /**
-     * 给调色板页面添加监听器
+     * 添加监听器.
      */
     public static void addListeners(){
         ColorForm colorForm=ColorForm.getInstance();
@@ -117,7 +120,7 @@ public class ColorListener {
     }
 
     /**
-     * 根据RGB的值更新十六进制的值
+     * 根据RGB的值更新十六进制的值.
      */
     public static void updateHEXText(){
         ColorForm colorForm=ColorForm.getInstance();
@@ -125,7 +128,7 @@ public class ColorListener {
     }
 
     /**
-     * 根据RGB的值更新RGB三个滑动条，更新三个标签，更新panel的颜色
+     * 根据RGB的值更新RGB三个滑动条，更新三个标签，更新panel的颜色.
      */
     public static void updateAll(){
         ColorForm colorForm=ColorForm.getInstance();

@@ -8,9 +8,13 @@ import java.awt.datatransfer.StringSelection;
 import java.util.Locale;
 import java.util.UUID;
 
+/**
+ * 给UID页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class UIDListener {
     /**
-     * 给UID界面组件添加监听器
+     * 添加监听器.
      */
     public static void addListeners(){
         UIDForm uidForm=UIDForm.getInstance();
@@ -33,7 +37,7 @@ public class UIDListener {
     }
 
     /**
-     * 更新四个UID的文本框
+     * 监听输入框变化，实时修改四个UID文本框内容.
      */
     public static void updateAll(){
         String uid= UUID.randomUUID().toString();

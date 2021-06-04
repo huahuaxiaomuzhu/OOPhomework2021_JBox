@@ -2,11 +2,15 @@ package com.huahuaxiaomuzhu.util;
 
 import java.math.BigInteger;
 
+/**
+ * 数字的进制转换.
+ * @see com.huahuaxiaomuzhu.ui.listener.HexadecimalConversionListener
+ */
 public class HexUtil {
     /**
-     * 通过十进制数返回各个数字的列表
-     * @param decimal
-     * @return String[],依次是10进制，16进制，8进制，2进制
+     * 通过十进制数返回各个数字的列表.
+     * @param decimal 十进制表示的数字.
+     * @return String[],依次是10进制，16进制，8进制，2进制.
      */
     public static String[] getGroupByDecimal(String decimal){
         if (decimal.equals("")){
@@ -23,9 +27,9 @@ public class HexUtil {
     }
 
     /**
-     * 通过十六进制数返回各个数字的列表
-     * @param hex
-     * @return String[],依次是10进制，16进制，8进制，2进制
+     * 通过十六进制数返回各个数字的列表.
+     * @param hex 十六进制表示的数字.
+     * @return String[],依次是10进制，16进制，8进制，2进制.
      */
     public static String[] getGroupByHex(String hex){
         if (hex.equals("")){
@@ -42,9 +46,9 @@ public class HexUtil {
     }
 
     /**
-     * 通过八进制数返回各个数字的列表
-     * @param oct
-     * @return String[],依次是10进制，16进制，8进制，2进制，32进制
+     * 通过八进制数返回各个数字的列表.
+     * @param oct 八进制表示的数字.
+     * @return String[],依次是10进制，16进制，8进制，2进制，32进制.
      */
     public static String[] getGroupByOct(String oct){
         if (oct.equals("")){
@@ -61,9 +65,9 @@ public class HexUtil {
     }
 
     /**
-     * 通过二进制数返回各个数字的列表
-     * @param bin
-     * @return String[],依次是10进制，16进制，8进制，2进制，32进制
+     * 通过二进制数返回各个数字的列表.
+     * @param bin 二进制表示的数字.
+     * @return String[],依次是10进制，16进制，8进制，2进制，32进制.
      */
     public static String[] getGroupByBin(String bin){
         if (bin.equals("")){
@@ -80,9 +84,9 @@ public class HexUtil {
     }
 
     /**
-     * 通过32进制数返回各个数字的列表
-     * @param thirtyBin
-     * @return  String[],依次是10进制，16进制，8进制，2进制，32进制
+     * 通过32进制数返回各个数字的列表.
+     * @param thirtyBin 三十二进制表示的数字.
+     * @return String[],依次是10进制，16进制，8进制，2进制，32进制.
      */
     public static String[] getGroupBy32(String thirtyBin){
         if (thirtyBin.equals("")){

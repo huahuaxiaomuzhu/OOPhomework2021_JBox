@@ -5,6 +5,10 @@ import com.huahuaxiaomuzhu.Application;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * 定位布局.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class LocateUtil {
     private static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
@@ -14,7 +18,9 @@ public class LocateUtil {
 
     private static int screenHeight = screenSize.height - screenInsets.top - screenInsets.bottom;
     /**
-     * 固定于屏幕中央显示
+     * 固定于屏幕中央显示.
+     * @param preferWidth 窗口宽度.
+     * @param preferHeight 窗口高度.
      */
     public static void locateToCenter(Component component,double preferWidth,double preferHeight){
         component.setBounds((screenWidth - (int)(preferWidth*screenWidth)) / 2, (screenHeight - (int)(preferHeight*screenHeight)) / 2,

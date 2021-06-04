@@ -10,10 +10,15 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.util.Locale;
 
+/**
+ * 给MD5加密页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class MD5Listener {
     private static int upMode=0;
+
     /**
-     * 给MD5加密页面组件添加监听器
+     * 添加监听器.
      */
     public static void addListeners(){
         MD5Form md5Form=MD5Form.getInstance();
@@ -82,7 +87,7 @@ public class MD5Listener {
     }
 
     /**
-     * 监听输入框变化，实时修改加密内容
+     * 监听输入框变化，实时修改加密内容.
      */
     public static void updateAllTextArea(){
         MD5Form md5Form=MD5Form.getInstance();

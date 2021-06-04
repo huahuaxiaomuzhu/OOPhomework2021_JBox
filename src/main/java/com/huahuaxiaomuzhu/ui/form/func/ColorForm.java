@@ -72,10 +72,6 @@ public class ColorForm {
         return BTextSlide;
     }
 
-    public JButton getRGBToHEXButton() {
-        return RGBToHEXButton;
-    }
-
     public JButton getHEXToRGBButton() {
         return HEXToRGBButton;
     }

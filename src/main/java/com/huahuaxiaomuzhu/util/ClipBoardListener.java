@@ -9,23 +9,30 @@ import java.awt.*;
 import java.awt.datatransfer.*;
 import java.io.IOException;
 
+/**
+ * 文字剪贴板和图片剪贴板，提供复制功能.
+ */
 public class ClipBoardListener implements ClipboardOwner {
     private Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
     private boolean going; //控制开关
 
-    /*****************
-     * 开始监视剪贴板 *
-     * ***************/
+    /**
+     * 开始监视剪贴板.
+     * @see com.huahuaxiaomuzhu.Application
+     */
     public void begin(){
         going = true;
         //将剪贴板中内容的ClipboardOwner设置为自己
         //这样当其中内容变化时，就会触发lostOwnership事件
         clipboard.setContents(clipboard.getContents(null), this);
     }
-    /*****************
-     * 停止监视剪贴板 *
-     * ***************/
 
+
+    /**
+     * 停止监视剪贴板
+     * @param clipboard 剪贴板.
+     * @param contents 文本内容.
+     */
     @Override
     public void lostOwnership(Clipboard clipboard, Transferable contents) {
         if (going){ //如果是进行中状态，则操作
@@ -118,11 +125,6 @@ public class ClipBoardListener implements ClipboardOwner {
                 }
             }
         }
-    }
-
-    public static void main(String[] args) {
-        ClipBoardListener.getInstance().begin();
-        new JFrame().setVisible(true);
     }
 }
 

@@ -5,11 +5,15 @@ import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 
+/**
+ * 格式化json.
+ * @see com.huahuaxiaomuzhu.ui.listener.JsonListener
+ */
 public class JsonUtil {
     /**
-     * 处理json
-     * @param rawText
-     * @return 格式化的json或者错误信息
+     * 处理json.
+     * @param rawText 未处理的json文本.
+     * @return 格式化的json或者错误信息.
      */
     public static String handleJson(String rawText){
         if (rawText.equals("")){

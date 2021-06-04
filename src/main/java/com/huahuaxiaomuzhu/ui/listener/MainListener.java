@@ -13,7 +13,14 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
+/**
+ * 给整个程序添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class MainListener {
+    /**
+     * 添加监听器.
+     */
     public static void addListener(){
         MainWindow mainWindow=MainWindow.getInstance();
         MD5Form md5Form=MD5Form.getInstance();

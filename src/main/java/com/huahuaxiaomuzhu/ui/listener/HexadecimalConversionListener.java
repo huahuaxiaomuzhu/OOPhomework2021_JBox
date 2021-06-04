@@ -10,9 +10,13 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.*;
 
+/**
+ * 给进制转换页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class HexadecimalConversionListener {
     /**
-     * 给进制转换页面的组件添加监听
+     * 添加监听器.
      */
     public static void addListeners(){
         Clipboard clipboard= Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -136,6 +140,9 @@ public class HexadecimalConversionListener {
         hexadecimalConversionForm.getCopyThirtyBinButton().addActionListener(e -> clipboard.setContents(new StringSelection(hexadecimalConversionForm.getThirtyBinaryText().getText()),null));
     }
 
+    /**
+     * 监听输入框变化，实时修改10进制文本框内容.
+     */
     static class DecListener implements DocumentListener{
         HexadecimalConversionForm hexadecimalConversionForm=HexadecimalConversionForm.getInstance();
         private void updateAll(){
@@ -160,6 +167,10 @@ public class HexadecimalConversionListener {
             updateAll();
         }
     }
+
+    /**
+     * 监听输入框变化，实时修改16进制文本框内容.
+     */
     static class HexListener implements DocumentListener{
         HexadecimalConversionForm hexadecimalConversionForm=HexadecimalConversionForm.getInstance();
         private void updateAll(){
@@ -184,6 +195,10 @@ public class HexadecimalConversionListener {
             updateAll();
         }
     }
+
+    /**
+     * 监听输入框变化，实时修改8进制文本框内容.
+     */
     static class OctListener implements DocumentListener{
         HexadecimalConversionForm hexadecimalConversionForm=HexadecimalConversionForm.getInstance();
         private void updateAll(){
@@ -208,6 +223,10 @@ public class HexadecimalConversionListener {
             updateAll();
         }
     }
+
+    /**
+     * 监听输入框变化，实时修改2进制文本框内容.
+     */
     static class BinListener implements DocumentListener{
         HexadecimalConversionForm hexadecimalConversionForm=HexadecimalConversionForm.getInstance();
         private void updateAll(){
@@ -232,6 +251,10 @@ public class HexadecimalConversionListener {
             updateAll();
         }
     }
+
+    /**
+     * 监听输入框变化，实时修改32进制文本框内容.
+     */
     static class ThirtyBinListener implements DocumentListener{
         HexadecimalConversionForm hexadecimalConversionForm=HexadecimalConversionForm.getInstance();
         private void updateAll(){

@@ -1,12 +1,16 @@
 package com.huahuaxiaomuzhu.util;
 
+/**
+ * 根据给定的RGB获取颜色.
+ * @see com.huahuaxiaomuzhu.ui.listener.ColorListener
+ */
 public class ColorUtil {
     /**
-     * 将RGB三个数字转换成十六进制字符串
-     * @param r
-     * @param g
-     * @param b
-     * @return
+     * 将RGB转换成十六进制字符串.
+     * @param r Red.
+     * @param g Green.
+     * @param b Blue.
+     * @return 十六进制字符串.
      */
     public static String RGBToHex(int r,int g,int b){
         String s="0123456789ABCDEF";
@@ -23,6 +27,12 @@ public class ColorUtil {
         }
         return hex;
     }
+
+    /**
+     * 将十六进制字符串转换成RGB.
+     * @param hex 十六进制字符串.
+     * @return 储存RGB的数组.
+     */
     public static int[] HEXToRGB(String hex){
         if (!hex.startsWith("#")){
             return new int[3];

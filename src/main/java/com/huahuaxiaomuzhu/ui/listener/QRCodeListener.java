@@ -10,7 +10,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * 给生成二维码页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class QRCodeListener {
+    /**
+     * 添加监听器.
+     */
     public static void addListeners(){
         QRForm qrForm=QRForm.getInstance();
         final Image[] image = new Image[1];

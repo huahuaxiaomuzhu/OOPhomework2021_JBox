@@ -6,7 +6,14 @@ import com.huahuaxiaomuzhu.util.EncodeUtil;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
+/**
+ * 给恢复乱码页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class EncodeListener {
+    /**
+     * 添加监听器.
+     */
     public static void addListeners(){
         EncodeForm encodeForm=EncodeForm.getInstance();
         encodeForm.getRawText().getDocument().addDocumentListener(new DocumentListener() {
@@ -24,6 +31,10 @@ public class EncodeListener {
             }
         });
     }
+
+    /**
+     * 监听输入框变化，实时修改文本框内容.
+     */
     public static void updateAll(){
         EncodeForm encodeForm=EncodeForm.getInstance();
         String rawText=encodeForm.getRawText().getText();

@@ -6,13 +6,17 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * 使用MD5算法对文本加密.
+ * @see com.huahuaxiaomuzhu.ui.listener.MD5Listener
+ */
 public class MD5Util{
     private static final char[] HEX_DIGITS = {'0', '1', '2', '3', '4', '5',
             '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
     /**
-     * MD5加密
-     * @param nativeString
-     * @return MD5加密的字符串
+     * MD5加密.
+     * @param nativeString 加密前的字符串.
+     * @return MD5加密后的字符串.
      */
     public static String toMD5(String nativeString){
         byte[] secretBytes = null;
@@ -32,9 +36,9 @@ public class MD5Util{
     }
 
     /**
-     * SHA1加密
-     * @param nativeString
-     * @return SHA1加密的字符串
+     * SHA1加密.
+     * @param nativeString 加密前的字符串.
+     * @return SHA1加密后的字符串.
      */
     public static String toSHA1(String nativeString){
         byte[] secretBytes=null;
@@ -59,9 +63,9 @@ public class MD5Util{
     }
 
     /**
-     * SHA224加密
-     * @param nativeString
-     * @return SHA224加密的字符串
+     * SHA224加密.
+     * @param nativeString 加密前的字符串.
+     * @return SHA224加密后的字符串.
      */
     public static String toSHA224(String nativeString){
         byte[] secretBytes=null;
@@ -81,9 +85,9 @@ public class MD5Util{
     }
 
     /**
-     * SHA256加密
-     * @param nativeString
-     * @return SHA256加密的字符串
+     * SHA256加密.
+     * @param nativeString 加密前的字符串.
+     * @return SHA256加密后的字符串.
      */
     public static String toSHA256(String nativeString){
         byte[] secretBytes=null;
@@ -103,9 +107,9 @@ public class MD5Util{
     }
 
     /**
-     * SHA384加密
-     * @param nativeString
-     * @return SHA384加密后的字符串
+     * SHA384加密.
+     * @param nativeString 加密前的字符串.
+     * @return SHA384加密后的字符串.
      */
     public static String toSHA384(String nativeString){
         byte[] secretBytes=null;
@@ -125,9 +129,9 @@ public class MD5Util{
     }
 
     /**
-     * SHA512加密
-     * @param nativeString
-     * @return SHA512加密后的字符串
+     * SHA512加密.
+     * @param nativeString 加密前的字符串.
+     * @return SHA512加密后的字符串.
      */
     public static String toSHA512(String nativeString){
         byte[] secretBytes=null;

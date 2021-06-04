@@ -7,7 +7,14 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
+/**
+ * 给日期页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class DateListener {
+    /**
+     * 添加监听器.
+     */
     public static void addListeners(){
         Clipboard clipboard= Toolkit.getDefaultToolkit().getSystemClipboard();
         DateFormatForm dateFormatForm=DateFormatForm.getInstance();

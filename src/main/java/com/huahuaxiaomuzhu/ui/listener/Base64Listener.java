@@ -6,10 +6,13 @@ import com.huahuaxiaomuzhu.util.Base64Util;
 import java.awt.*;
 import java.awt.datatransfer.*;
 
-
+/**
+ * 给base64加密页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class Base64Listener {
     /**
-     * 给base64加密页面组件添加监听器
+     * 添加监听器.
      */
     public static void addListeners(){
         Base64Form base64Form=Base64Form.getInstance();

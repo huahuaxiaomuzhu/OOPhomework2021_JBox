@@ -9,7 +9,14 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
+/**
+ * 给格式化json页面组件添加监听器.
+ * @see com.huahuaxiaomuzhu.ui.MainFrame
+ */
 public class JsonListener {
+    /**
+     * 添加监听器.
+     */
     public static void addListeners(){
         JsonForm jsonForm=JsonForm.getInstance();
         jsonForm.getRawText().getDocument().addDocumentListener(new DocumentListener() {
@@ -34,6 +41,10 @@ public class JsonListener {
             clipboard.setContents(new StringSelection(jsonForm.getResultText().getText()),null);
         });
     }
+
+    /**
+     * 监听输入框变化，实时修改格式化内容.
+     */
     public static void update(){
         JsonForm jsonForm=JsonForm.getInstance();
         jsonForm.getResultText().setText(JsonUtil.handleJson(jsonForm.getRawText().getText()));
