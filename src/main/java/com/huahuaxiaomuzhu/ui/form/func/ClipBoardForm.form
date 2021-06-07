@@ -14,7 +14,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <scrollpane id="2e26f">
+          <scrollpane id="2e26f" binding="scrollPane2">
             <constraints>
               <card name="Card1"/>
             </constraints>
@@ -51,7 +51,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <scrollpane id="327c8">
+          <scrollpane id="327c8" binding="scrollPane1">
             <constraints>
               <card name="Card1"/>
             </constraints>
@@ -60,6 +60,7 @@
               <maximumSize width="400" height="32767"/>
               <minimumSize width="14" height="15"/>
               <preferredSize width="1" height="32267"/>
+              <verticalScrollBarPolicy value="22"/>
             </properties>
             <border type="none"/>
             <children>
@@ -67,7 +68,8 @@
                 <constraints/>
                 <properties>
                   <maximumSize width="200" height="32767"/>
-                  <preferredSize width="200" height="10"/>
+                  <minimumSize width="200" height="10"/>
+                  <preferredSize width="1" height="32267"/>
                 </properties>
                 <border type="none"/>
                 <children/>

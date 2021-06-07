@@ -8,6 +8,8 @@ public class ClipBoardForm{
     private JPanel TextPanel;
     private JTabbedPane ClipBoardPanel;
     private JPanel PicPanel;
+    private JScrollPane scrollPane1;
+    private JScrollPane scrollPane2;
     private JList list1;
     private GridBagConstraints gridBagConstraints;
     public JTabbedPane getClipBoardPanel() {
@@ -38,6 +40,8 @@ public class ClipBoardForm{
         if (clipBoardForm==null){
             clipBoardForm=new ClipBoardForm();
         }
+        clipBoardForm.scrollPane1.getVerticalScrollBar().setUnitIncrement(20);
+        clipBoardForm.scrollPane2.getVerticalScrollBar().setUnitIncrement(20);
        return clipBoardForm;
     }
 
