@@ -1,5 +1,7 @@
 package com.huahuaxiaomuzhu.ui.component;
 
+import com.huahuaxiaomuzhu.ui.MainFrame;
+import com.huahuaxiaomuzhu.ui.form.func.ClipBoardForm;
 import com.huahuaxiaomuzhu.util.ClipBoardListener;
 
 import javax.swing.*;
@@ -12,6 +14,7 @@ public class ImgClipBoard {
     private JLabel ImgLabel;
     private JLabel createdTimeLabel;
     private JPanel MainPanel;
+    private JButton DeleteButton;
 
     public JPanel getMainPanel() {
         return MainPanel;
@@ -26,5 +29,9 @@ public class ImgClipBoard {
         ImgLabel.setIcon(icon);
         createdTimeLabel.setText(new Date().toString());
         copyButton.addActionListener(e -> ClipBoardListener.getInstance().setContent(image));
+        DeleteButton.addActionListener(e -> {
+            ClipBoardForm.getInstance().getPicPanel().remove(this.MainPanel);
+            MainFrame.getInstance().pack();
+        });
     }
 }

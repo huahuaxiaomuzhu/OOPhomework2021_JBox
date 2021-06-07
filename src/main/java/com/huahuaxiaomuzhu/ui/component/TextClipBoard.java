@@ -13,26 +13,12 @@ public class TextClipBoard{
     private JButton CopyTextButton;
     private JLabel CreatedTimeLabel;
     private JButton selfDestructButton;
+    private JPanel OuterPanel;
 
     public JPanel getPanel1() {
         return MainPanel;
     }
 
-    public JTextArea getClipText() {
-        return ClipText;
-    }
-
-    public JButton getCopyTextButton() {
-        return CopyTextButton;
-    }
-
-    public JLabel getCreatedTimeLabel() {
-        return CreatedTimeLabel;
-    }
-
-    public JButton getSelfDestructButton() {
-        return selfDestructButton;
-    }
 
     public TextClipBoard(String ClipTextContent) {
         CreatedTimeLabel.setText(new Date().toString());
