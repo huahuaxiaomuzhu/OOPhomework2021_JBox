@@ -105,7 +105,7 @@
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Label"/>
+          <text value="32进制"/>
         </properties>
       </component>
       <scrollpane id="773b0">
@@ -128,7 +128,7 @@
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="复制   ⌘+1"/>
+          <text value="复制   Ctrl+1"/>
         </properties>
       </component>
       <component id="faf6" class="javax.swing.JButton" binding="copyHexButton">
@@ -136,7 +136,7 @@
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="复制   ⌘+2"/>
+          <text value="复制   Ctrl+2"/>
         </properties>
       </component>
       <component id="787d6" class="javax.swing.JButton" binding="copyOctButton">
@@ -144,7 +144,7 @@
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="复制   ⌘+3"/>
+          <text value="复制   Ctrl+3"/>
         </properties>
       </component>
       <component id="63" class="javax.swing.JButton" binding="copyBinButton">
@@ -152,7 +152,7 @@
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="复制   ⌘+4"/>
+          <text value="复制   Ctrl+4"/>
         </properties>
       </component>
       <component id="4b8f9" class="javax.swing.JButton" binding="copyThirtyBinButton">
@@ -160,7 +160,7 @@
           <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="复制   ⌘+5"/>
+          <text value="复制   Ctrl+5"/>
         </properties>
       </component>
       <component id="d8031" class="javax.swing.JButton" binding="clearButton">
