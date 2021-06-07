@@ -2,7 +2,6 @@ package com.huahuaxiaomuzhu.ui.component;
 
 import com.huahuaxiaomuzhu.ui.MainFrame;
 import com.huahuaxiaomuzhu.ui.form.func.ClipBoardForm;
-import com.huahuaxiaomuzhu.ui.form.func.QRForm;
 import com.huahuaxiaomuzhu.util.ClipBoardListener;
 
 import javax.swing.*;

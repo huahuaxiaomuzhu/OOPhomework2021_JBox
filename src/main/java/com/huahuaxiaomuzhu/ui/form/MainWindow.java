@@ -17,7 +17,6 @@ public class MainWindow {
     private JPanel TimePanel;
     private JPanel ColorPanel;
     private JPanel ClipBoardPanel;
-    private JPanel QRCodePanel;
     private JPanel encodePanel;
 
     public JPanel getMd5Panel() {
@@ -60,9 +59,6 @@ public class MainWindow {
         return ClipBoardPanel;
     }
 
-    public JPanel getQRCodePanel() {
-        return QRCodePanel;
-    }
 
     public JPanel getEncodePanel() {
         return encodePanel;
@@ -88,7 +84,6 @@ public class MainWindow {
         mainWindow.getTimePanel().add(DateFormatForm.getInstance().getDatePanel());
         mainWindow.getColorPanel().add(ColorForm.getInstance().getColorPanel());
         mainWindow.getClipBoardPanel().add(ClipBoardForm.getInstance().getClipBoardPanel());
-        mainWindow.getQRCodePanel().add(QRForm.getInstance().getQRPanel());
         mainWindow.getEncodePanel().add(EncodeForm.getInstance().getEncodePanel());
     }
 
