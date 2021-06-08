@@ -10,7 +10,7 @@
     <children>
       <grid id="27dc6" binding="imgPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
         <border type="none"/>
@@ -24,14 +24,20 @@
           <component id="e8250" class="javax.swing.JButton" binding="copyButton">
             <constraints/>
             <properties>
-              <text value="复制"/>
+              <text value="点击复制"/>
+            </properties>
+          </component>
+          <component id="654b3" class="javax.swing.JButton" binding="DeleteButton">
+            <constraints/>
+            <properties>
+              <text value="点击删除"/>
             </properties>
           </component>
         </children>
       </grid>
       <component id="6853e" class="javax.swing.JLabel" binding="createdTimeLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>
