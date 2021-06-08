@@ -14,7 +14,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <toolTipText value="输入正则表达式"/>
+        </properties>
       </component>
       <component id="b37fb" class="javax.swing.JButton" binding="clearButton">
         <constraints>
@@ -35,6 +37,7 @@
             <constraints/>
             <properties>
               <lineWrap value="true"/>
+              <toolTipText value="正则匹配的结果会显示在这里"/>
             </properties>
           </component>
         </children>
@@ -50,6 +53,7 @@
             <constraints/>
             <properties>
               <lineWrap value="true"/>
+              <toolTipText value="输入被匹配的文本"/>
             </properties>
           </component>
         </children>

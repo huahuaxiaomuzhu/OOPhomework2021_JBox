@@ -19,6 +19,7 @@
             <constraints/>
             <properties>
               <lineWrap value="true"/>
+              <toolTipText value="输入需要格式化的Json"/>
             </properties>
           </component>
         </children>
@@ -34,6 +35,8 @@
             <constraints/>
             <properties>
               <lineWrap value="true"/>
+              <text value=""/>
+              <toolTipText value="格式化的结果会显示在这里"/>
             </properties>
           </component>
         </children>
